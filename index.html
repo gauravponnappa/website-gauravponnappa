@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+body{
+    background-image: url("gif22.gif");
+    background-attachment: fixed;
+   
+}
+h2,h3{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 2%;
+    padding-bottom: 0.0%;
+}
+.card{
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 2;
+}
+.card:hover{
+    box-shadow: 0 0px 16px 0 rgba(0,0,0,0.2);
+
+}
+.menu{
+    position: absolute;
+    right: 2%;
+    top: 10%;
+}
+.imger {
+  display: block;
+  margin-top: 7%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  scale: 0.5;
+}
+
+.container { 
+  height: 60px;
+  position: relative;
+  
+}
+.container_none{
+  display: none;
+}
+.name {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: -75px;
+    color: white;
+    
+}
+.name2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 120%;
+    margin-top: -55px;
+    color: white;
+    
+}
+table{
+    height: 90px;
+    width: 200px;
+}
+
+
+</style>
+
+
+
+    <head>
+        <title>Home | Gaurav Ponnappa</title>
+        <link rel = "icon" href ="me.jpeg" type = "image/x-icon">
+    </head>
+
+    <body bgcolor="#222222" style="font-family:monospace;">
+        <div class="card">
+            <h2>Gaurav Ponnappa</h2>
+                <h3 class="menu"><about>Portfolio</about>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<port>Academics</port>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://gauravponnappa.in/resume" download style="color: #ffffff;">DOWNLOAD CV</a></h3>
+
+            </div>
+            
+            <div class="container" id="demo">
+            <img src="me.jpeg" class="imger">
+
+    <center>
+
+            <p class="name" style="font-size: 360%;padding-bottom: 15px;">Gaurav Ponnappa</p>
+            <p class="name2" >Student, Developer and <u id="changetext">........</u> </p>
+
+
+           
+            <table>
+                <tr>
+                    <td><a href="https://github.com/gauravponnappa"target="_blank"><img src="github.png" style="width: 30px;height: 28px"></a></td>
+                    <td><a href="https://instagram.com"target="_blank"><img src="instagram.png" style="width: 30px;height: 30px"></a></td>
+                    <td><a href="mailto:gauravz4833@gmail.com"><img src="email.png" style="width: 30px;height: 28px"></a></td>
+                    <td><a href="https://steamcommunity.com/profiles/76561199174289967/"target="_blank"><img src="steam.png" style="width: 30px;height: 30px"></a></td>
+
+                </tr>
+            </table>
+
+        </div>
+        <div class="container" style="background-color:#ffffff; display: flex;height:auto;width:auto">
+
+                <p style="font-size: 150%;margin-left: 10%;padding-bottom: 3%;line-height: 1.6;color: #505050;"><br><strong>Greetings !</strong><br><br>I'm Gaurav ponnappa, currently studying Engineering at MIT Mysore, India.<br>
+                I have a strong background in computer science and engineering, and my passion lies in designing innovative software and hardware solutions. Through this portfolio, I aim to share some of my best work and give you an idea of my expertise and experience in this field. So, please take a moment to browse through my projects, and feel free to contact me if you have any questions or collaboration opportunities.
+        </div>
+        <div class="container" style="height: auto;">
+          <center><p style="font-size: 150%; color: #ffffff;padding: 3%;">INTERNSHIP PROJECTS</p></center>
+
+            <div class="container_none" style="background-color:#ffffff; display: flex;height:auto;width:auto;">
+              <p>under development </p>
+            </div>
+
+          <center><p style="font-size: 150%; color: #ffffff;padding: 3%;">PERSONAL PROJECTS</p></center>
+          <div class="container_none" style="background-color:#ffffff; display: flex;height:auto;width:auto;">
+            <p>under development </p>
+          </div>
+          <center><p style="font-size: 150%; color: #ffffff;padding: 3%;">SKILLS </p></center>
+          <div class="container_none" style="background-color:#ffffff; display: flex;height:auto;width:auto;">
+            <p>under development </p>
+          </div>
+          <center><p style="font-size: 150%; color: #ffffff;padding: 3%;">CONTACT</p></center>
+          <div class="container_none" style="background-color:#ffffff; display: flex;height:auto;width:auto;">
+            <p>under development </p>
+          </div>
+                
+        </div>
+
+       
+
+        
+    </center>
+        
+    </body>
+     <script>
+                var text = ["Techie", "Gamer", "Foodie", "Coffee-lover", "Crypto-Trader", "Wanna-be-Racer", "Electronics-hobbyist", "Engineer-To-Be."];
+                var counter = 0;
+                var counter2=0;
+                var elem = document.getElementById("changetext");
+                var inst = setInterval(change, 700);
+                var inst2 = setInterval(change2, 150);
+
+                function change2() {
+                  
+                  if (counter2 >= text.length) {
+                    counter2 = 0;
+                    //clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+                  }
+                
+                    var w = window.innerWidth;
+                    var h = window.innerHeight;
+                    if(h<1000){
+                    document.getElementById("demo").style.height = (h-18)+"px";
+                    }else{document.getElementById("demo").style.height = 40+"%";}
+                }
+
+
+                function change() {
+                  elem.innerHTML = text[counter];
+                  counter++;
+                  
+                    
+                    
+                  if (counter >= text.length) {
+                    counter = 0;
+                    //clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle3
+                  }
+
+                  
+                }
+
+                
+                </script>
+
+
+</html>

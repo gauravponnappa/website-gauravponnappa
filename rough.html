@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:,">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #121212;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .round-button {
+            border: none;
+            border-radius: 50%;
+            padding: 30px;
+            font-size: 18px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .round-button.lock {
+            background-color: #c0392b; /* Red */
+        }
+        .round-button.unlock {
+            background-color: #27ae60; /* Green */
+        }
+        .round-button:hover {
+            background-color: #333;
+        }
+        .round-button:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Car Lock Control</h1>
+        <div class="buttons">
+            <button class="round-button lock" onclick="toggleLock()">Lock</button>
+            <button class="round-button unlock" onclick="toggleUnlock()">Unlock</button>
+        </div>
+    </div>
+
+    <script>
+        function toggleLock() {
+            fetch('/lock')
+                .then(response => response.text())
+                .then(data => updateState(data));
+        }
+
+        function toggleUnlock() {
+            fetch('/unlock')
+                .then(response => response.text())
+                .then(data => updateState(data));
+        }
+
+        function updateState(data) {
+            const state12 = data.charAt(0);
+            const state34 = data.charAt(1);
+            const lockButton = document.querySelector('.lock');
+            const unlockButton = document.querySelector('.unlock');
+
+            if (state12 === '1') {
+                lockButton.style.backgroundColor = '#333';
+            } else {
+                lockButton.style.backgroundColor = '#c0392b';
+            }
+
+            if (state34 === '1') {
+                unlockButton.style.backgroundColor = '#333';
+            } else {
+                unlockButton.style.backgroundColor = '#27ae60';
+            }
+        }
+    </script>
+</body>
+</html>

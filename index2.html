@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    body {
+        background-image: url("gif22.gif");
+        background-attachment: fixed;
+    }
+
+    h2, h3 {
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        padding-left: 2%;
+        padding-bottom: 0.0%;
+    }
+
+    .card {
+        width: 100%;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        z-index: 2;
+        background-color: black;
+    }
+
+    .card:hover {
+        box-shadow: 0 0px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .menu {
+        position: absolute;
+        right: 2%;
+        top: 10%;
+    }
+
+    .imger {
+        display: block;
+        margin-top: 7%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+        scale: 0.5;
+    }
+
+    .container {
+        height: 60px;
+        position: relative;
+    }
+
+    .container_none {
+        display: none;
+    }
+
+    .name {
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: -75px;
+        color: white;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+        animation: slide-in 2s ease-out forwards;
+    }
+
+    .name span {
+        display: inline-block;
+        opacity: 0;
+        animation: fade-in 1s ease-out forwards;
+    }
+
+    table {
+        height: 90px;
+        width: 200px;
+    }
+
+    @keyframes slide-in {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+
+<head>
+    <title>Home | Gaurav Ponnappa</title>
+    <link rel="icon" href="me.jpeg" type="image/x-icon">
+</head>
+
+<body bgcolor="#222222" style="font-family:monospace;">
+    <div class="card">
+        <h2>Gaurav Ponnappa</h2>
+        <h3 class="menu">
+            <about>Portfolio</about>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<port>Academics</port>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://gauravponnappa.in/resume" download style="color: #ffffff;">DOWNLOAD CV</a>
+        </h3>
+    </div>
+
+    <div class="container" id="demo">
+        <img src="me.jpeg" class="imger">
+
+        <center>
+            <p class="name" style="font-size: 360%; padding-bottom: 0px;">
+                <span>Gaurav</span>
+                <span>Ponnappa</span>
+            </p>
+            <p class="name2" style="color: #ffffff; font-size: 195%;">Student, Developer and <u id="changetext">........</u></p>
+
+            <table>
+                <tr>
+                    <td><a href="https://github.com/gauravponnappa" target="_blank"><img src="github.png" style="width: 30px; height: 28px;"></a></td>
+                    <td><a href="https://instagram.com" target="_blank"><img src="instagram.png" style="width: 30px; height: 30px;"></a></td>
+                    <td><a href="mailto:gauravz4833@gmail.com"><img src="email.png" style="width: 30px; height: 28px;"></a></td>
+                    <td><a href="https://steamcommunity.com/profiles/76561199174289967/" target="_blank"><img src="steam.png" style="width: 30px; height: 30px;"></a></td>
+                </tr>
+            </table>
+        </center>
+    </div>
+
+    <div class="container" style="background-color: #ffffff; display: flex; height: auto; width: auto;">
+        <p style="font-size: 150%; margin-left: 10%; padding-bottom: 3%; line-height: 1.6; color: #505050;"><br><strong>Greetings!</strong><br><br>I'm Gaurav Ponnappa, a computer science engineer graduated from MIT Mysore, India.<br>
+            I have a strong background in computer science and engineering, and my passion lies in designing innovative software and hardware solutions. Through this portfolio, I aim to share some of my best work and give you an idea of my expertise and experience in this field. So, please take a moment to browse through my projects, and feel free to contact me if you have any questions or collaboration opportunities.</p>
+        </div>
+
+    <div class="container" style="height: auto;">
+        <center>
+            <p style="font-size: 150%; color: #ffffff; padding: 3%;"><strong>INTERNSHIP PROJECTS</strong></p>
+        </center>
+        <div class="container_none" style="background-color: #ffffff; display: flex; height: auto; width: auto;">
+            <p style="font-size: 150%; margin-left: 10%; padding-bottom: 3%; line-height: 1.6; color: #505050;"><br><strong>Internship project at L&T Technological Services</strong><br><br>The code has been implemented in python and the
+                algorithm utilizes the OpenCV libraries for python to
+                perform image operations.
+                The OpenCV fetches the image file and applies canny
+                edge detection algorithm and is implimented in an Android application
+                along with tire alignment detection</p>
+                <div><img src="ipr1.png"></div>
+        </div>
+        <div class="container_none" style="background-color: grey; display: flex; height: 1px; width: auto;">
+           
+        </div>
+        <div class="container_none" style="background-color: #ffffff; display: flex; height: auto; width: auto;">
+            <div><img src="ipr2.png" style="padding-left: 1%; scale: 80%;"></div>
+            <p style="font-size: 150%; margin-left: 10%; padding-bottom: 3%; line-height: 1.6; color: #505050;"><br><br><br><strong>Internship project at Schneider Electric</strong><br><br>Worked on developing firmware and android
+                application for collecting meter data at L&T
+                Electrical and automation (Unit of Schneider
+                electric) as an intern.</p>
+                
+        </div>
+        <center>
+            <p style="font-size: 150%; color: #ffffff; padding: 3%;"><strong>OTHER PROJECTS</strong></p>
+        </center>
+        <div class="container_none" style="background-color: #ffffff; display: flex; height: auto; width: auto;">
+            <p style="font-size: 150%; margin-left: 10%; padding-bottom: 3%; line-height: 1.6; color: #505050;"><br><br><strong>Successfully developed and
+                deployed IOT based home
+                automation projects with the
+                help of development boards</strong>
+            </p>
+        </div>
+        <div class="container_none" style="background-color: #ffffff; display: flex; height: auto; width: auto;">
+            <p style="font-size: 150%; margin-left: 10%; padding-bottom: 3%; line-height: 1.6; color: #505050;">Designed a database to manage
+                sportsmen data for our college
+                as a DBMS mini project</p>
+        </div>
+        <div class="container_none" style="background-color: #ffffff; display: flex; height: auto; width: auto;">
+            <p style="font-size: 150%; margin-left: 10%; padding-bottom: 3%; line-height: 1.6; color: #505050;"><strong>Developed an OpenGL project
+                to generate patterns that mimic
+                a Kaleidoscope for computer
+                graphics laboratory.</strong>
+            </p>
+        </div>
+        <div class="container_none" style="background-color: #ffffff; display: flex; height: auto; width: auto;">
+            <p style="font-size: 150%; margin-left: 10%; padding-bottom: 3%; line-height: 1.6; color: #505050;">Designed and developed an
+                encrypted password storage
+                app for Mobile application lab
+                project.</p>
+        </div>
+        <div class="container_none" style="background-color: #ffffff; display: flex; height: auto; width: auto;">
+            <p style="font-size: 150%; margin-left: 10%; padding-bottom: 3%; line-height: 1.6; color: #505050;"><strong>Developed a website for
+                Greenland plantations
+                homestay in Coorg
+                (greenlandplantations.com)</strong>
+            </p>
+        </div>
+        <center>
+            
+
+            
+    
+    <center>
+        <p style="font-size: 150%; color: #ffffff; padding: 3%;">CONTACT</p>
+    </center>
+    <div class="container_none" style="background-color: #ffffff; display: flex; height: auto; width: auto; justify-content: center; align-items: center; flex-direction: column;">
+        <br><br><p style="font-size: 20px;">Email: <a href="mailto:gauravz4833@gmail.com">gauravz4833@gmail.com</a></p>
+        <p style="font-size: 20px;">Phone: <a href="tel:+919353467983">+919353467983</a></p>
+        <p style="font-size: 20px;">Instagram: <a href="https://instagram.com/gaurav_ponnappa" target="_blank">@gaurav_ponnappa</a></p>
+    </div>
+</div>
+
+        </div>
+    </div>
+
+    <script>
+        var text = ["Techie", "Gamer", "Foodie", "Coffee-lover", "Crypto-Trader", "Wanna-be-Racer", "Electronics-hobbyist", "Engineer-To-Be."];
+        var counter = 0;
+        var counter2 = 0;
+        var elem = document.getElementById("changetext");
+        var inst = setInterval(change, 700);
+        var inst2 = setInterval(change2, 150);
+
+        function change2() {
+            if (counter2 >= text.length) {
+                counter2 = 0;
+            }
+           var w = window.innerWidth;
+            var h = window.innerHeight;
+            if (h < 1000) {
+                document.getElementById("demo").style.height = (h - 18) + "px";
+            } else {
+                document.getElementById("demo").style.height = 40 + "%";
+            }
+        }
+
+        function change() {
+            elem.innerHTML = text[counter];
+            counter++;
+
+            if (counter >= text.length) {
+                counter = 0;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
